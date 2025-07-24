@@ -1,0 +1,127 @@
+body {
+      background: url(Background.jpg);
+      background-color: #0a0a0a;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      width: 100%;
+      padding-top: 40px; 
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff;
+    }
+
+    .calculator {
+      background-color: #111;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      position: absolute;
+      top: 150px;
+      left: center;
+      border: 3px solid #00d9ff;
+      box-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 40px #02090a;
+
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .calculator:hover {
+      border-color: #00d9ff;
+      box-shadow:
+        0 0 20px #00d9ff,
+        0 0 40px #00d9ff,
+        0 0 60px #00d9ff;
+    }
+
+    .display {
+      background-color: #000;
+      color: #00d9ff;
+      font-size: 2em;
+      padding: 15px;
+      text-align: right;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      box-shadow: 0 0 10px #00d9ff;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 20px;
+      font-size: 1.2em;
+      border: 2px solid #444;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #222;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .buttons button:hover {
+      border-color: #00d9ff;
+      background-color: #00d9ff;
+      color: #000;
+      scale:1.5;
+      box-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 30px #00d9ff;
+    }
+
+    .buttons .equal {
+      background-color: #00b3e6;
+      border-color: #00b3e6;
+    }
+
+    .buttons .equal:hover {
+      background-color: #00b3e6;
+      border-color: #00b3e6;
+      color: #fff;
+      box-shadow:
+        0 0 10px #00b3e6,
+        0 0 20px #00b3e6,
+        0 0 30px #00b3e6;
+    }
+
+    .buttons .clear {
+      background-color: #e91e63;
+      border-color: #e91e63;
+    }
+
+    .buttons .clear:hover {
+      background-color: #e91e63;
+      border-color: #e91e63;
+      color: #fff;
+      box-shadow:
+        0 0 10px #e91e63,
+        0 0 20px #e91e63,
+        0 0 30px #e91e63;
+    }
+
+    .span {
+      grid-column: span 2;
+    }
